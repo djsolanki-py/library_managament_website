@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monark Library | Study Room Booking</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">Monark Library</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="studyroom.html" class="active">Study Rooms</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">Menu</div>
+    </nav>
+  </header>
+  <main class="page">
+    <section class="page-header">
+      <h1>Study Room Booking</h1>
+      <p>Reserve focused spaces for group study, project work, and quiet review sessions.</p>
+    </section>
+
+    <section class="issue-hero">
+      <div class="issue-hero-card">
+        <p class="eyebrow">Focused Spaces</p>
+        <h2>Reserve A Room In Minutes</h2>
+        <p>
+          Book quiet pods or collaboration rooms with a clear timeline, equipment list,
+          and easy rescheduling options built for student workflows.
+        </p>
+        <div class="issue-badges">
+          <span>Instant Confirmation</span>
+          <span>Screen + Whiteboard</span>
+          <span>Flexible Time Slots</span>
+        </div>
+      </div>
+      <div class="issue-hero-panel">
+        <div>
+          <h3>Today’s Availability</h3>
+          <p>Rooms open: 9:00 AM - 9:00 PM</p>
+        </div>
+        <div>
+          <h3>Quick Rules</h3>
+          <p>2-hour slots · 10 min grace period</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-switch">
+      <div class="form-switcher" role="tablist" aria-label="Booking data views">
+        <a class="switch-btn" href="booking-data.html">Book A Room Data</a>
+        <a class="switch-btn" href="manage-data.html">Manage Booking Data</a>
+      </div>
+    </section>
+
+    <section class="form-grid fancy">
+      <form class="card issue-card" id="bookingForm">
+        <h2>Book A Room</h2>
+        <p class="card-subtitle">Reserve a time slot with your team details.</p>
+        <label>Student Name
+          <input type="text" id="bookingName" placeholder="e.g. Aarav Sharma" required />
+        </label>
+        <label>Student ID
+          <input type="text" id="bookingId" placeholder="e.g. ENG-24-104" required />
+        </label>
+        <label>Room Type
+          <select id="bookingRoom">
+            <option>Quiet Pod (2 seats)</option>
+            <option>Collaboration Room (4 seats)</option>
+            <option>Project Lab (6 seats)</option>
+          </select>
+        </label>
+        <label>Time Slot
+          <select id="bookingSlot">
+            <option>9:00 AM - 11:00 AM</option>
+            <option>11:30 AM - 1:30 PM</option>
+            <option>2:00 PM - 4:00 PM</option>
+            <option>4:30 PM - 6:30 PM</option>
+          </select>
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Confirm Booking</button>
+          <button class="btn ghost" type="button">Check Open Rooms</button>
+        </div>
+      </form>
+
+      <form class="card return-card" id="manageForm">
+        <h2>Manage Booking</h2>
+        <p class="card-subtitle">Reschedule, cancel, or check-in quickly.</p>
+        <label>Booking Code
+          <input type="text" id="manageCode" placeholder="e.g. MRK-4921" required />
+        </label>
+        <label>Email / Phone
+          <input type="text" id="manageContact" placeholder="e.g. aarav@monark.edu" required />
+        </label>
+        <label>Action
+          <select id="manageAction">
+            <option>Reschedule</option>
+            <option>Cancel Booking</option>
+            <option>Check-in</option>
+          </select>
+        </label>
+        <div class="form-actions">
+          <button class="btn ghost" type="submit">Update Booking</button>
+          <button class="btn primary" type="button">Get QR Pass</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="issue-guide">
+      <div class="section-head">
+        <h2>Booking Flow Guide</h2>
+        <p>Follow a clean, step-by-step workflow for smooth reservations.</p>
+      </div>
+      <div class="issue-guide-grid">
+        <article class="step-card">
+          <span class="step-number">01</span>
+          <h3>Select Room</h3>
+          <p>Pick the right space for your group size.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">02</span>
+          <h3>Choose Slot</h3>
+          <p>Lock in a time window that fits your schedule.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">03</span>
+          <h3>Confirm & Access</h3>
+          <p>Receive your QR pass and check-in easily.</p>
+        </article>
+      </div>
+      <div class="issue-notice">
+        <div>
+          <h3>Booking Policy Snapshot</h3>
+          <p>Limit: 1 active booking per student. Extensions require staff approval.</p>
+        </div>
+        <a class="btn ghost" href="categories.html">View Policies</a>
+      </div>
+    </section>
+
+    <section class="return-guide">
+      <div class="section-head">
+        <h2>Room Etiquette</h2>
+        <p>Keep the space clean, quiet, and ready for the next team.</p>
+      </div>
+      <div class="issue-guide-grid">
+        <article class="step-card return-step">
+          <span class="step-number">01</span>
+          <h3>Arrive On Time</h3>
+          <p>Check-in within the 10-minute grace period.</p>
+        </article>
+        <article class="step-card return-step">
+          <span class="step-number">02</span>
+          <h3>Keep It Quiet</h3>
+          <p>Use indoor voices and respect nearby rooms.</p>
+        </article>
+        <article class="step-card return-step">
+          <span class="step-number">03</span>
+          <h3>Reset The Room</h3>
+          <p>Wipe boards and return furniture to default.</p>
+        </article>
+      </div>
+      <div class="issue-notice return-notice">
+        <div>
+          <h3>Quiet Room Reminder</h3>
+          <p>Food is not allowed. Laptops and water bottles only.</p>
+        </div>
+        <a class="btn ghost" href="books.html">Explore Rooms</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Monark Library</strong>
+      <p>Engineering Block, Main Campus</p>
+    </div>
+    <div>
+      <p>Email: library@monark.edu</p>
+      <p>Phone: +1 (000) 123-4567</p>
+    </div>
+  </footer>
+
+  <script src="js/studyroom.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

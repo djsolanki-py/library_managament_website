@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monark Library | Manage Booking Data</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">Monark Library</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="studyroom.html">Study Rooms</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">Menu</div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="form-switch">
+      <div class="form-switcher" role="tablist" aria-label="Booking data views">
+        <a class="switch-btn" href="booking-data.html">Book A Room Data</a>
+        <a class="switch-btn active" href="manage-data.html">Manage Booking Data</a>
+      </div>
+    </section>
+
+    <section class="page-header">
+      <h1>Manage Booking Data</h1>
+      <p>Structured list of booking updates and actions.</p>
+    </section>
+
+    <section class="booking-data">
+      <div class="data-panel">
+        <div class="data-actions">
+          <button class="btn ghost" type="button" id="clearManageData">Clear Manage Data</button>
+        </div>
+        <div class="data-list" id="manageList"></div>
+        <div class="form-actions" style="margin-top: 12px;">
+          <a class="btn ghost" href="studyroom.html">Back to Booking</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Monark Library</strong>
+      <p>Engineering Block, Main Campus</p>
+    </div>
+    <div>
+      <p>Email: library@monark.edu</p>
+      <p>Phone: +1 (000) 123-4567</p>
+    </div>
+  </footer>
+
+  <script src="js/manage-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
